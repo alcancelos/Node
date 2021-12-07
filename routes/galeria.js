@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('galeria', { title: 'OP Jurídico Contable' });
+    res.render('galeria', {
+        title: 'OP Jurídico Contable',
+        isGaleria: true
+    });
 });
 
 module.exports = router;

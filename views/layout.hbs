@@ -18,12 +18,12 @@
         <div class="dropdown">
           <button class="dropbtn"><i class="fas fa-bars"></i></button>
           <div class="dropdown-content">
-            <a href="./">Home</a>
-            <a href="./nosotros">Nosotros</a>
-            <a href="./servicios">Servicios</a>
-            <a href="./galeria">Galería</a>
-            <a href="./novedades">Novedades</a>
-            <a href="./contacto">Contacto</a>
+            <a href="./" class="{{#if isHome}}Activo {{/if}}">Home</a>
+            <a href="./nosotros" class="{{#if isNosotros}}Activo {{/if}}">Nosotros</a>
+            <a href="./servicios" class="{{#if isServicios}}Activo {{/if}}">Servicios</a>
+            <a href="./galeria" class="{{#if isGaleria}}Activo {{/if}}">Galería</a>
+            <a href="./novedades" class="{{#if isNovedades}}Activo {{/if}}">Novedades</a>
+            <a href="./contacto" class="{{#if isContacto}}Activo {{/if}}">Contacto</a>
           </div>
         </div>
       </nav>
